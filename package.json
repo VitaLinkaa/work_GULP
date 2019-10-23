@@ -18,6 +18,10 @@
     "sync": "^0.2.5"
   },
   "dependencies": {
-    "normalize.css": "^8.0.1"
+    "D": "^1.0.0",
+    "animate.css": "^3.7.2",
+    "jquery": "^3.4.1",
+    "normalize.css": "^8.0.1",
+    "slick-slider": "^1.8.2"
   }
 }

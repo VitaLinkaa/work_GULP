@@ -1,4 +1,196 @@
-@import '../../node_modules/normalize.css/normalize'
+@import '../../node_modules/normalize.css/normalize';
+@import 'global';
+
+body
+  font-family: 'Fira Sans', sans-serif;
+  fz16
+  font-weight: normal
+  font-style: normal;
+
+a 
+  display: inline-block
+  text-decoration: none
+  color: #fff
+
+ul, li 
+  margin: 0
+  padding: 0
+  list-style: none
+
+// .subtitle-left======================================
+.subtitle-left
+  font-size: 16px
+  line-height: 32px
+  letter-spacing: 7px
+  text-transform: uppercase
+  color: #FFFFFF
+  opacity: 0.5;
+  position: relative
+  padding-left: 70px
+  display: inline-block
+  &::before
+    content: ''
+    position: absolute
+    width: 60px
+    height: 1px
+    background-color: #fff
+    left: 0
+    top: 50%
+
+// end subtitle-left======================================
+.animated-line
+  stroke-dashoffset: 600
+  stroke-dasharray: 600
+  animation: animline 5s infinite 6s
+
+@keyframes animline
+  to
+    stroke-dashoffset: 0
+    
+
+
+
+
+.header 
+  position: relative
+  max-height: 1024px
+  height: 100%
+  &__arrows
+    position: absolute
+    left: 130px
+    bottom: 100px
+    z-index: 3
+  &__map
+    position: absolute
+    right: 0
+    top: 0
+    z-index: 3
+  &__aside
+    position: absolute
+    top: -18px
+    left: 0
+    z-index: 5
+    border-right: 1px solid rgba(#fff, .25)
+    color: #fff
+    text-align: center
+    height: 100vh
+    &-menu
+      // border: 1px solid red
+      text-align: center
+      span
+        display: block
+        font-weight: 300
+        font-size: 12px
+        line-height: 14px
+        letter-spacing: 3px
+        padding-top: 6px
+        margin-bottom: 20px
+  &__date
+    // border: 1px solid red
+    font-weight: 800
+    font-size: 37px
+    line-height: 40px
+    span
+      font-weight: 300
+      font-size: 12px
+      line-height: 16px
+      letter-spacing: 1.4px
+      display: block
+
+  &__location
+    font-weight: 300
+    font-size: 13px
+    margin-top: 10px
+
+
+
+
+  &__title
+    font-weight: 800
+    font-size: 150px
+    line-height: 136px
+    text-transform: uppercase
+    color: #FFFFFF
+    opacity: 0.07
+    max-width: 350px
+    position: absolute
+    top: 0
+    left: 0
+    z-index: 4
+
+  &__slider
+    position: relative
+    &-item
+      height: 100vh
+      background-image: url(../img/header-bg.jpg)
+      background-repeat: no-repeat
+      background-position: center
+      background-size: cover
+
+.slider-item__info
+  position: absolute
+  right: 80px
+  bottom: 80px
+  text-align: right
+  color: #fff
+  text-transform: uppercase
+
+  &-title
+    font-weight: 800
+    font-size: 60px
+    line-height: 76px
+    margin-bottom: 15px
+
+  &-text
+    font-weight: 800
+    font-size: 30px
+    line-height: 66px
+
+.slider-arrows
+  position: absolute
+  top: 40px
+  right: 80px
+  cursor: pointer
+  z-index: 4
+
+.slider-arrows__left
+  right: 125px
+
+.slider__dots
+  position: absolute
+  right: 20px
+  bottom: 40px
+  max-width: 800px
+  width: 100%
+  color: #fff
+  outline: none
+  &-item
+    margin-right: 10px
+
+.slick-current
+  .slider__dots-box
+    border-top: 2px solid #4AF6CD
+
+
+
+.slider__dots-box
+  width: 150px
+  display: flex
+  justify-content: space-between
+  height: 20px
+  align-items: center
+  border-top: 2px solid #fff
+  padding-top: 6px
+
+.dots-box__number
+  font-weight: 600
+  font-size: 20px
+
+.dots-box__name
+  font-weight: 300
+
+
+
 
 
 
